@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.udacity.firebase.shoppinglistplusplus"
@@ -51,6 +50,8 @@ dependencies {
     compile 'com.firebaseui:firebase-ui:0.2.2'
 
     /* For Google Play Services */
-    compile 'com.google.android.gms:play-services-safetynet:8.3.0'
-    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile 'com.google.android.gms:play-services-safetynet:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
 }
+
+apply plugin: 'com.google.gms.google-services'
